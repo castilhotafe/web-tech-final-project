@@ -10,13 +10,13 @@
   </head>
 
   <body class="min-h-screen flex flex-col bg-grey text-black">
-    <!-- HEADER -->
     <header class="bg-white border-b sticky top-0">
       <div class="flex justify-between items-center px-4 py-4">
         <p class="font-bold">LOGO</p>
 
+        <!-- FIX do header -->
         <h1
-          class="hidden md:block absolute left-1/2 -translate-x-1/2 text-black font-semibold text-sm whitespace-nowrap"
+          class="absolute left-1/2 -translate-x-1/2 text-black font-semibold text-sm whitespace-nowrap"
         >
           Marcos Castilho | Web Project
         </h1>
@@ -25,8 +25,8 @@
           <img src="assets/img/hamburger.png" alt="Menu" />
         </button>
 
-        <nav class="hidden md:block">
-          <ul class="flex gap-6 text-sm">
+        <nav class="top_nav">
+          <ul class="flex flex-row gap-6 text-sm">
             <li><a href="index.html" class="nav-hover">Home</a></li>
             <li><a href="about.html" class="nav-hover">About</a></li>
             <li><a href="resume.html" class="nav-hover">Resume</a></li>
@@ -38,14 +38,12 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="flex-grow px-4 py-10">
       <section class="max-w-2xl mx-auto text-center">
         <h1 class="text-xl font-semibold mb-6">My Recent Work</h1>
 
         <p class="mb-4">Here you can access my recent web-based work</p>
 
-        <!-- LINK CARD -->
         <a
           href="https://dev.screencraft.net.au/web_users/decastma/phase-4/"
           target="_blank"
@@ -54,9 +52,6 @@
           Click here to go to the webpage
         </a>
 
-        <!-- IMAGE PREVIEW -->
-        <!-- IMAGE PREVIEW (bigger) -->
-        <!-- IMAGE PREVIEW (extra large) -->
         <div class="bg-white border rounded-md shadow-sm p-8 max-w-4xl mx-auto">
           <img
             src="assets/img/phase-4.png"
@@ -67,15 +62,15 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="bg-black text-white py-6 mt-10">
       <div
         class="flex flex-col md:flex-row justify-between items-center px-4 gap-4"
       >
         <p class="font-bold">LOGO</p>
 
+        <!-- FIX do footer -->
         <h1
-          class="hidden md:block absolute left-1/2 -translate-x-1/2 text-white font-semibold text-sm whitespace-nowrap"
+          class="footer-title absolute left-1/2 -translate-x-1/2 text-white font-semibold text-sm whitespace-nowrap"
         >
           Marcos Castilho | Web Project
         </h1>

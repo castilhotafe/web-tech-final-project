@@ -1,48 +1,66 @@
+/* ---------------------------------------------------
+   GLOBAL COLOUR VARIABLES
+--------------------------------------------------- */
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-grey: #e5e7eb;
-  --color-contrast: #a29595;
+  --color-contrast: #a29595; /* hover shadow */
 }
 
+/* ---------------------------------------------------
+   HAMBURGER ICON
+--------------------------------------------------- */
 .hamburger {
   width: 36px;
   height: 36px;
+  display: flex;     /* garante que aparece */
+  align-items: center;
+  justify-content: center;
 }
 
+/* ---------------------------------------------------
+   TOP NAV (DESKTOP ONLY)
+--------------------------------------------------- */
 .top_nav {
-  display: none;
+  display: none; /* hidden on mobile */
 }
 
-.bg-card {
-  background-color: var(--color-white);
-}
-
-.border-grey {
-  border-color: var(--color-grey);
-}
-
+/* ---------------------------------------------------
+   CARD + NAV HOVER EFFECT
+--------------------------------------------------- */
 .card-hover:hover,
 .nav-hover:hover {
   box-shadow: 0 0 8px var(--color-contrast);
 }
 
+/* ---------------------------------------------------
+   FOOTER LOGO STYLE (OPTIONAL, ONLY FOR CONSISTENCY)
+--------------------------------------------------- */
 .footer-logo {
   font-weight: bold;
   letter-spacing: 0.07em;
 }
 
+.footer-title {
+  display: none;            /* mobile = escondido */
+}
+/* ---------------------------------------------------
+   RESPONSIVE RULES
+--------------------------------------------------- */
 @media (min-width: 1024px) {
+
+  /* Desktop: show nav, hide hamburger */
   .top_nav {
     display: flex;
   }
+
   .hamburger {
     display: none;
   }
 
-  .resume_page {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2px;
+
+  .footer-title {
+    display: block;         /* desktop = aparece */
   }
 }
