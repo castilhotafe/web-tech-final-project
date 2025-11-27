@@ -1,56 +1,37 @@
-/* ---------------------------------------------------
-   GLOBAL COLOUR VARIABLES
---------------------------------------------------- */
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-grey: #e5e7eb;
-  --color-contrast: #a29595; /* hover shadow */
+  --color-contrast: #a29595;
 }
 
-/* ---------------------------------------------------
-   HAMBURGER ICON
---------------------------------------------------- */
 .hamburger {
   width: 36px;
   height: 36px;
-  display: flex;     /* garante que aparece */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* ---------------------------------------------------
-   TOP NAV (DESKTOP ONLY)
---------------------------------------------------- */
 .top_nav {
-  display: none; /* hidden on mobile */
+  display: none;
 }
 
-/* ---------------------------------------------------
-   CARD + NAV HOVER EFFECT
---------------------------------------------------- */
 .card-hover:hover,
 .nav-hover:hover {
   box-shadow: 0 0 8px var(--color-contrast);
 }
 
-/* ---------------------------------------------------
-   FOOTER LOGO STYLE (OPTIONAL, ONLY FOR CONSISTENCY)
---------------------------------------------------- */
 .footer-logo {
   font-weight: bold;
   letter-spacing: 0.07em;
 }
 
 .footer-title {
-  display: none;            /* mobile = escondido */
+  display: none;
 }
-/* ---------------------------------------------------
-   RESPONSIVE RULES
---------------------------------------------------- */
-@media (min-width: 1024px) {
 
-  /* Desktop: show nav, hide hamburger */
+@media (min-width: 1024px) {
   .top_nav {
     display: flex;
   }
@@ -59,8 +40,7 @@
     display: none;
   }
 
-
   .footer-title {
-    display: block;         /* desktop = aparece */
+    display: block;
   }
 }
