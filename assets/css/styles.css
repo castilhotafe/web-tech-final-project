@@ -1,4 +1,3 @@
-/* ROOT VARIABLES */
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
@@ -6,40 +5,33 @@
   --color-contrast: #a29595;
 }
 
-/* MOBILE HAMBURGER */
 .hamburger {
   width: 36px;
   height: 36px;
 }
 
-/* hide nav on mobile */
 .top_nav {
   display: none;
 }
 
-/* CARD BACKGROUND */
 .bg-card {
   background-color: var(--color-white);
 }
 
-/* GREY BORDER */
 .border-grey {
   border-color: var(--color-grey);
 }
 
-/* HOVER EFFECTS */
 .card-hover:hover,
 .nav-hover:hover {
   box-shadow: 0 0 8px var(--color-contrast);
 }
 
-/* FOOTER LOGO TEXT */
 .footer-logo {
   font-weight: bold;
   letter-spacing: 0.07em;
 }
 
-/* DESKTOP BEHAVIOR */
 @media (min-width: 1024px) {
   .top_nav {
     display: flex;
