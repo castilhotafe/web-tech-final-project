@@ -1,70 +1,56 @@
-/* ================================
-   CUSTOM COLORS
-================================ */
-
+/* ROOT VARIABLES */
 :root {
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-grey: #E5E7EB;
-    --color-contrast: #a29595; /* hover suave */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #e5e7eb;
+  --color-contrast: #a29595;
 }
 
-/* ================================
-   HEADER
-================================ */
-
+/* MOBILE HAMBURGER */
 .hamburger {
-    width: 36px;
-    height: 36px;
+  width: 36px;
+  height: 36px;
 }
 
-/* Escondido no mobile */
+/* hide nav on mobile */
 .top_nav {
-    display: none;
+  display: none;
 }
 
-/* ================================
-   BACKGROUND OF CARDS
-================================ */
-
+/* CARD BACKGROUND */
 .bg-card {
-    background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
+/* GREY BORDER */
 .border-grey {
-    border-color: var(--color-grey);
+  border-color: var(--color-grey);
 }
 
-/* ================================
-   HOVERS (cards + nav)
-   Agora bem suaves e usando só color-contrast
-================================ */
-
+/* HOVER EFFECTS */
 .card-hover:hover,
 .nav-hover:hover {
-    box-shadow: 10 10 10px var(--color-contrast);    
+  box-shadow: 0 0 8px var(--color-contrast);
 }
 
-/* ================================
-   FOOTER
-================================ */
-
+/* FOOTER LOGO TEXT */
 .footer-logo {
-    font-weight: bold;
-    letter-spacing: 0.07em;
+  font-weight: bold;
+  letter-spacing: 0.07em;
 }
 
-/* ================================
-   DESKTOP >= 1024px
-================================ */
-
+/* DESKTOP BEHAVIOR */
 @media (min-width: 1024px) {
-    .top_nav { display: flex; }
-    .hamburger { display: none; }
+  .top_nav {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
 
-    .resume_page {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2px;
-    }
+  .resume_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+  }
 }
