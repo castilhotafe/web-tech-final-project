@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home | Marcos Castilho</title>
+
+    <!-- Tailwind output -->
+    <link rel="stylesheet" href="assets/css/site.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="min-h-screen flex flex-col text-black bg-grey">
+
+<!-- HEADER -->
+<header class="sticky top-0 bg-white shadow">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+
+        <!-- LOGO + NAME -->
+        <div class="flex items-center gap-3">
+            <p class="font-bold">LOGO</p>
+            <div class="flex flex-col">
+                <h1 class="text-base font-semibold">Marcos Castilho</h1>
+                <p class="text-xs text-gray-600">Certificate IV in IT (Programming)</p>
+            </div>
+        </div>
+
+        <!-- MOBILE HAMBURGER -->
+        <button class="hamburger md:hidden" aria-label="Open navigation menu">
+            <img src="assets/img/hamburger.png" alt="Menu icon">
+        </button>
+
+        <!-- DESKTOP NAV -->
+        <nav class="top_nav" aria-label="Main navigation">
+            <ul class="flex gap-4 text-sm">
+                <li><a href="index.html" class="nav-hover">Home</a></li>
+                <li><a href="about.html" class="nav-hover">About</a></li>
+                <li><a href="resume.html" class="nav-hover">Resume</a></li>
+                <li><a href="mywork.html" class="nav-hover">My work</a></li>
+                <li><a href="projects.html" class="nav-hover">Projects</a></li>
+                <li><a href="contact.html" class="nav-hover">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow">
+    <section class="py-8">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- GRID DE CARDS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl mx-auto">
+
+                <a href="about.html"
+                   class="block bg-card rounded-md border border-grey px-6 py-8 text-center shadow-sm card-hover">
+                    <h2 class="font-medium">About</h2>
+                </a>
+
+                <a href="projects.html"
+                   class="block bg-card rounded-md border border-grey px-6 py-8 text-center shadow-sm card-hover">
+                    <h2 class="font-medium">Completed Projects</h2>
+                </a>
+
+                <a href="mywork.html"
+                   class="block bg-card rounded-md border border-grey px-6 py-8 text-center shadow-sm card-hover">
+                    <h2 class="font-medium">Most recent project</h2>
+                </a>
+
+                <a href="resume.html"
+                   class="block bg-card rounded-md border border-grey px-6 py-8 text-center shadow-sm card-hover">
+                    <h2 class="font-medium">Resume</h2>
+                </a>
+            </div>
+
+            <!-- CONTACT CARD -->
+            <div class="w-full max-w-xs mx-auto mt-8">
+                <a href="contact.html"
+                   class="block bg-card rounded-md border border-grey px-6 py-8 text-center shadow-sm card-hover">
+                    <h2 class="font-medium">Contact me!</h2>
+                </a>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-black text-white mt-10 py-6 border-t">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <!-- Logo + copyright -->
+        <div class="flex flex-col items-center md:items-start">
+            <p class="footer-logo">LOGO</p>
+            <p class="text-xs text-gray-400 mt-1">© 2025 Marcos Castilho</p>
+        </div>
+
+        <!-- NAV -->
+        <nav aria-label="Footer navigation">
+            <ul class="flex flex-col md:flex-row gap-6 text-sm">
+                <li><a href="index.html" class="nav-hover">Home</a></li>
+                <li><a href="about.html" class="nav-hover">About</a></li>
+                <li><a href="resume.html" class="nav-hover">Resume</a></li>
+                <li><a href="mywork.html" class="nav-hover">My work</a></li>
+                <li><a href="projects.html" class="nav-hover">Projects</a></li>
+                <li><a href="contact.html" class="nav-hover">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+</body>
+</html>
