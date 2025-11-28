@@ -12,12 +12,17 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   let isValid = true;
 
+  let nameRegex = /^[a-zA-Z\s'.-]+$/;
   if (name === "") {
     document.getElementById("nameError").textContent = "Name is required";
     isValid = false;
   } else if (name.length < 2) {
     document.getElementById("nameError").textContent =
       "Name must be at least 2 characters";
+    isValid = false;
+  } else if (!nameRegex.test(name)) {
+    document.getElementById("nameError").textContent =
+      "Name contains invalid characters";
     isValid = false;
   }
 
@@ -31,6 +36,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     isValid = false;
   }
 
+  let messageRegex = /^[a-zA-Z0-9\s.,!?'-]+$/;
   if (message === "") {
     document.getElementById("messageError").textContent =
       "Message cannot be empty";
@@ -38,6 +44,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   } else if (message.length < 10 || message.length > 200) {
     document.getElementById("messageError").textContent =
       "Message must be between 10 and 200 characters";
+    isValid = false;
+  } else if (!messageRegex.test(message)) {
+    document.getElementById("messageError").textContent =
+      "Message contains invalid characters";
     isValid = false;
   }
 
