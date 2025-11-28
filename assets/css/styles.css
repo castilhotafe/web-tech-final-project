@@ -30,6 +30,26 @@
 .footer-title {
   display: none;
 }
+.dropdown-menu {
+  display: none;
+  background: var(--color-white);
+  border: 1px solid var(--color-contrast);
+  border-radius: 6px;
+  box-shadow: 0 0 6px var(--color-contrast);
+  padding: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.group:hover .dropdown-menu {
+  display: block;
+}
+
+.hamburger_nav a {
+  display: block;
+  padding: 6px 0;
+}
 
 @media (min-width: 1024px) {
   .top_nav {

@@ -20,9 +20,23 @@
           Marcos Castilho | Web Project
         </h1>
 
-        <button class="hamburger md:hidden">
-          <img src="assets/img/hamburger.png" alt="Menu" />
-        </button>
+        <div class="relative group">
+          <button class="hamburger md:hidden">
+            <img src="assets/img/hamburger.png" alt="Menu" />
+          </button>
+
+          
+          <nav class="dropdown-menu md:hidden">
+            <ul class="hamburger_nav">
+              <li><a href="index.html" class="nav-hover">Home</a></li>
+              <li><a href="about.html" class="nav-hover">About</a></li>
+              <li><a href="resume.html" class="nav-hover">Resume</a></li>
+              <li><a href="mywork.html" class="nav-hover">My work</a></li>
+              <li><a href="projects.html" class="nav-hover">Projects</a></li>
+              <li><a href="contact.html" class="nav-hover">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <nav class="top_nav">
           <ul class="flex flex-row gap-6 text-sm">
